@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:adafruit
 LIBS:Custom
+LIBS:LuckyKitty-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -668,4 +669,6 @@ Text Label 8700 1350 0    60   ~ 0
 DoubleCheck
 Text Label 2750 650  0    60   ~ 0
 Examine
+Text Label 10350 4400 0    60   ~ 0
+SOL4
 $EndSCHEMATC
