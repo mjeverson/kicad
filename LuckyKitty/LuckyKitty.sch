@@ -280,8 +280,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 1100 7650 1100
 Wire Wire Line
-	5200 1250 5200 2000
-Wire Wire Line
 	8000 900  8000 750 
 Wire Wire Line
 	8000 750  9450 750 
@@ -305,7 +303,7 @@ Connection ~ 3500 1400
 Wire Wire Line
 	5550 1150 5550 2000
 Wire Wire Line
-	5200 1250 5850 1250
+	5100 1250 5850 1250
 Wire Wire Line
 	5850 1250 5850 750 
 Wire Wire Line
@@ -511,15 +509,15 @@ Connection ~ 9050 5400
 Wire Wire Line
 	2400 3950 9150 3950
 Wire Wire Line
-	4250 3950 4250 3350
+	4250 3350 4250 3950
 Wire Wire Line
 	3550 3100 3550 3950
 Connection ~ 3550 3950
 Connection ~ 3550 3100
 Wire Wire Line
-	6750 3350 6750 5300
+	6750 5300 6750 3350
 Wire Wire Line
-	6750 5300 750  5300
+	750  5300 6750 5300
 Wire Wire Line
 	750  5300 750  6250
 Wire Wire Line
@@ -535,9 +533,9 @@ Wire Wire Line
 	5000 6250 5000 5300
 Connection ~ 5000 5300
 Wire Wire Line
-	5950 3350 5950 5250
+	5950 5250 5950 3350
 Wire Wire Line
-	5950 5250 700  5250
+	700  5250 5950 5250
 Wire Wire Line
 	700  5250 700  6950
 Wire Wire Line
@@ -577,7 +575,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 6800 5100 6800
 Wire Wire Line
-	4350 3350 4350 5100
+	4350 5100 4350 3350
 Wire Wire Line
 	600  5100 4850 5100
 Wire Wire Line
@@ -595,7 +593,7 @@ Wire Wire Line
 	4850 6600 4850 5100
 Connection ~ 4350 5100
 Wire Wire Line
-	4450 3350 4450 5050
+	4450 5050 4450 3350
 Wire Wire Line
 	550  5050 4800 5050
 Wire Wire Line
@@ -654,7 +652,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 6200 7450 6200
 Connection ~ 7400 5400
-NoConn ~ 2400 4150
 NoConn ~ 850  7300
 NoConn ~ 3050 7300
 NoConn ~ 5100 7300
@@ -671,4 +668,50 @@ Text Label 2750 650  0    60   ~ 0
 Examine
 Text Label 10350 4400 0    60   ~ 0
 SOL4
+Wire Wire Line
+	5100 2000 5100 1250
+Wire Wire Line
+	2950 700  2950 1100
+Connection ~ 2950 1100
+Wire Wire Line
+	3950 700  3950 1500
+Connection ~ 3950 1500
+Wire Wire Line
+	2400 4150 3700 4150
+Connection ~ 3700 4150
+$Comp
+L 12V_RGB_LED U?
+U 1 1 5AA6BADB
+P 8150 4600
+F 0 "U?" H 8500 4800 60  0000 C CNN
+F 1 "12V_RGB_LED" H 8200 4300 60  0000 C CNN
+F 2 "" H 8150 4600 60  0001 C CNN
+F 3 "" H 8150 4600 60  0001 C CNN
+	1    8150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2000 6350 1400
+Wire Wire Line
+	6350 1400 7350 1400
+Wire Wire Line
+	7350 1400 7350 4450
+Wire Wire Line
+	7350 4450 7550 4450
+Wire Wire Line
+	7400 1100 7400 4600
+Wire Wire Line
+	7400 4600 7550 4600
+Connection ~ 7400 1100
+Wire Wire Line
+	7550 4750 7450 4750
+Wire Wire Line
+	7450 4750 7450 3950
+Connection ~ 7450 3950
+Text Notes 7850 4250 0    60   ~ 0
+Safety Lighting
+Text Notes 7350 7500 0    60   ~ 0
+Lucky Kitty Slot Machine v1.1
+Text Notes 7400 4850 0    60   ~ 0
+Double Check GND Here
 $EndSCHEMATC
